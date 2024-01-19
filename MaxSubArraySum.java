@@ -1,5 +1,6 @@
 public class MaxSubArraySum {
 
+    // optimize
     public static int maxSubArraySum(int numbers[]) {
         int maxSum = Integer.MIN_VALUE;
         int prefix[] = new int[numbers.length];
@@ -23,6 +24,21 @@ public class MaxSubArraySum {
         return maxSum;
     }
 
+    // kadans algorithm
+    public static int kadansAlgorithm(int numbers[]) {
+        int cs = 0, ms = Integer.MIN_VALUE;
+
+        for (int i = 0; i < numbers.length; i++) {
+            cs = cs + numbers[i];
+            if (numbers[i] < 0) {
+                cs = 0;
+            }
+            ms = Math.max(ms, cs);
+        }
+        return ms;
+    }
+
+    // brut force
     public static int printSubArray(int numbers[]) {
         int maxSum = Integer.MIN_VALUE;
         for (int i = 0; i < numbers.length; i++) {
@@ -42,8 +58,8 @@ public class MaxSubArraySum {
     }
 
     public static void main(String[] args) {
-        int numbers[] = { 1, -2, 6, -1, 3 };
-        int result = maxSubArraySum(numbers);
+        int numbers[] = { -1, 3, 2, -4 };
+        int result = kadansAlgorithm(numbers);
 
         System.out.println("max sum : " + result);
     }
