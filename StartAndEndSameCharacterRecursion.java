@@ -1,18 +1,23 @@
 public class StartAndEndSameCharacterRecursion {
-    static int isStartAndEndCharSame(int startIndex, int endIndex, String str, int count) {
-        if (startIndex == str.length() || endIndex == str.length())
+    static int isStartAndEndCharSame(int startIndex, String str, int count) {
+        if (startIndex == str.length()) {
             return count;
-
-        if (str.charAt(startIndex) == str.charAt(endIndex)) {
-            count += 1;
         }
-        isStartAndEndCharSame(startIndex, endIndex + 1, str, count);
-        isStartAndEndCharSame(startIndex + 1, endIndex + 1, str, count);
 
-        return count;
+        StringBuilder str2 = new StringBuilder("");
+
+        for (int i = startIndex; i < str.length(); i++) {
+            if (str.charAt(i) == str.charAt(startIndex)) {
+                count++;
+            }
+            str2.append(str.charAt(i));
+            System.out.println(str2);
+        }
+
+        return isStartAndEndCharSame(startIndex + 1, str, count);
     }
 
     public static void main(String[] args) {
-        System.out.println(isStartAndEndCharSame(0, 0, "abcab", 0));
+        System.out.println(isStartAndEndCharSame(0, "abcab", 0));
     }
 }
