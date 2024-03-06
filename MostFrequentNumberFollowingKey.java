@@ -1,4 +1,4 @@
-import java.util.*;
+// import java.util.*;
 
 public class MostFrequentNumberFollowingKey {
     public static int mostFrequentNumber(int arr[], int key) {

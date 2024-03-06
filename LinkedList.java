@@ -128,8 +128,8 @@ public class LinkedList {
         ll.Add(5, 80);
         ll.print();
         System.out.println(size);
-        System.out.println("remove last element " + ll.RemoveLast() + "  size = " + ll.size);
-        System.out.println("remove last element " + ll.RemoveFirst() + "  size = " + ll.size);
+        System.out.println("remove last element " + ll.RemoveLast() + "  size = " + size);
+        System.out.println("remove last element " + ll.RemoveFirst() + "  size = " + size);
         ll.print();
     }
 }
