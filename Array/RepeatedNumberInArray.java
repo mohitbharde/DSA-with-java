@@ -1,3 +1,5 @@
+package Array;
+
 public class RepeatedNumberInArray {
     public static boolean repeatedNumber(int number[]) {
         int n = number.length;

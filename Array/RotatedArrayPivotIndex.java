@@ -1,3 +1,5 @@
+package Array;
+
 public class RotatedArrayPivotIndex {
     public static int pivotIndex(int number[], int target) {
         int start = 0;

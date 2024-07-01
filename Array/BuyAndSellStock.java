@@ -1,3 +1,5 @@
+package Array;
+
 public class BuyAndSellStock {
 
     public static int profit(int price[]) {

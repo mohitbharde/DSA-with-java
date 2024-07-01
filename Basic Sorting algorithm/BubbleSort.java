@@ -1,3 +1,5 @@
+package Array;
+
 public class BubbleSort {
     public static void bubbleSortInIncreasing(int arr[]) {
         int count = 0;

@@ -118,6 +118,24 @@ public class LinkedList {
         return val;
     }
 
+    public int remove(int index) {
+        if (index >= size || index < 0) {
+            System.out.println("invalid index");
+            return -1;
+        }
+
+        Node temp = Head;
+        for (int i = 0; i < index - 1 && temp != null; i++) {
+            temp = temp.next;
+        }
+
+        int val = temp.next.data;
+        temp.next = temp.next.next;
+
+        size--;
+        return val;
+    }
+
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
         ll.addFirst(30);
@@ -125,11 +143,11 @@ public class LinkedList {
         ll.addFirst(10);
         ll.AddLast(40);
         ll.AddLast(50);
-        ll.Add(5, 80);
+        ll.Add(2, 80);
         ll.print();
         System.out.println(size);
         System.out.println("remove last element " + ll.RemoveLast() + "  size = " + size);
-        System.out.println("remove last element " + ll.RemoveFirst() + "  size = " + size);
+        System.out.println("remove last element " + ll.remove(7) + "  size = " + size);
         ll.print();
     }
 }

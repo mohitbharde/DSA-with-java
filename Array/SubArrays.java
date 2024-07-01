@@ -1,3 +1,5 @@
+package Array;
+
 public class SubArrays {
 
     public static void printSubArray(int numbers[]) {

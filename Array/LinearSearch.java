@@ -1,3 +1,5 @@
+package Array;
+
 public class LinearSearch {
 
     public static int Linear_Search(int arr[], int key) {

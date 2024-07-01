@@ -1,3 +1,5 @@
+package Array;
+
 public class ContainerWithMostWater {
     // public static int mostWater(int water[]) {
     // int mostWater = 0;

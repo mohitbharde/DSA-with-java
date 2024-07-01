@@ -1,3 +1,5 @@
+package Array;
+
 public class PairsInArray {
 
     public static void printPairs(int numbers[]) {
