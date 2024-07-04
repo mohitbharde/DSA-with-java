@@ -1,4 +1,6 @@
-package Array;
+
+// package Array;
+import java.util.*;
 
 public class BuyAndSellStock {
 

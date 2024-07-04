@@ -1,4 +1,4 @@
-package Array;
+import java.util.*;
 
 public class RotatedArrayPivotIndex {
     public static int pivotIndex(int number[], int target) {

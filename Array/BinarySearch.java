@@ -1,4 +1,6 @@
-package Array;
+
+// package Array;
+import java.util.*;
 
 public class BinarySearch {
 
@@ -22,7 +24,7 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         int numbers[] = { 2, 4, 6, 8, 10, 12, 14 };
-        int key = 21;
+        int key = 12;
         System.out.println("Element found at index: " + binarySearch(numbers, key));
     }
 }

@@ -1,4 +1,4 @@
-package Array;
+import java.util.*;
 
 public class RepeatedNumberInArray {
     public static boolean repeatedNumber(int number[]) {
