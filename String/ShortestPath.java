@@ -1,3 +1,5 @@
+package String;
+
 public class ShortestPath {
     public static float shortestPath(String str) {
         float x = 0, y = 0;

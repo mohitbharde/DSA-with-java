@@ -1,3 +1,5 @@
+package String;
+
 public class StringCompression {
     public static String stringCompression(String str) {
         StringBuilder newstr = new StringBuilder("");

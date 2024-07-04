@@ -1,3 +1,5 @@
+package String;
+
 public class StringIsPlaindrome {
     public static boolean isPlaindrome(String str) {
         for (int i = 0; i < str.length() / 2; i++) {
