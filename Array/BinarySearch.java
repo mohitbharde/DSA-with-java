@@ -1,7 +1,4 @@
 
-// package Array;
-import java.util.*;
-
 public class BinarySearch {
 
     // Binary Search

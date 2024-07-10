@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class ContainerWithMostWater {
     // public static int mostWater(int water[]) {

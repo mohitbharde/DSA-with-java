@@ -1,4 +1,3 @@
-import java.util.*;
 
 public class dumy {
     static boolean search(String pattern, String text, int idx) {
